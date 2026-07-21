@@ -4,20 +4,37 @@ import logoImg from '../assets/logicatstudio_logo.png';
 
 const bookPages = [
   { 
-    left: "El viejo mundo se consumió bajo las llamas de la primera era, un cataclismo provocado por la soberbia de los antiguos reyes. De entre aquellas cenizas aún humeantes, los altos tejedores de la magia ancestral comenzaron a hilar, en absoluto secreto, los hilos primordiales de Ary.", 
-    right: "Fue un nacimiento forjado en el silencio de los templos caídos. Sabían que el equilibrio se había roto para siempre, y que solo una estirpe ligada a la tierra y al vacío sería capaz de canalizar el poder residual que los dioses desterrados olvidaron al marchar." 
+    left: `<b>A 20 días del mes de Julio.</b>
+    
+    Han comenzado a tildarme de loco… de hombre caído en el delirio y de la paranoia. Mas bien sé que hay misterios ocultos a mi entendimiento. Encontré este grimorio en blanco para plasmar mis hechos.
+    
+    Todos se conducen con extrañeza al hallar en mi presencia. Murmuran entredientes y sospecho que han concebido una parlada secreta, pues con mis propios ojos he visto pergaminos sellados con grafías… o símbolos jamás contemplados por ningún campesino o pueblerino alguno, ni en los exiliados.`, 
+    right: `Desconozco qué pretenden de mi persona, cuando cumplo con todo cuanto me demandan, a despecho de las habladurías y difamaciones del poblado. Una vez más, quien es mi mano derecha abandonó la taberna antes de la hora acostumbrada, y en mi caminar de retorno, sentía la certidumbre de ser asechado. Más no sabría decir si era un hombre o solo la sombra y el reflejo de un espíritu vagabundo.
+    
+    Quizá sea obra de la bruja del pueblo, que ha lanzado un nuevo maleficio sobre mí… Solo los cielos lo saben.` 
+  },
+
+  { 
+    left: `<b>A 21 días del mes de Julio.</b>
+    
+    Quizá sea certeza que me hallo algo paranoico, imaginando cosas donde no las hay. Le revelé a Ananda mis pesares, más solo recibí sus burlas ante mis pensamientos. Señalándome que la mayoría del pueblo no sabía escribir y capaz era un bosquejo inventado.`, 
+    right: `Sin embargo, me atormenta ese sonido continuo que escucho en la soledad, así como esos pergaminos sellados con un símbolo que jamás había visto.
+    
+    Mañana en madruga iré a ver al oráculo. Es el que predice mi suerte cuando apuesto por los barriles de fermentado y me hace salir victorioso. Quizá, solo quizá, pueda darme alguna señal de lo que sucede.` 
   },
   { 
-    left: "Seis runas de plata pura fueron fundidas en el solsticio de invierno y arrojadas a los abismos más profundos de los océanos del oeste, sellando el avance de las sombras. Los siglos transcurrieron, y la marea devoró imperios enteros, borrando todo rastro de su ubicación original.", 
-    right: "Sin embargo, las crónicas dictan que solo la tercera runa permaneció inalterada. En la oscuridad del lecho marino, su pulso esmeralda sigue latiendo con fuerza, esperando una mano lo suficientemente osada —o maldita— para reclamar el conocimiento que custodia." 
-  },
-  { 
-    left: "Para contener la marea de la putrefacción que ahora despierta en las fronteras, el brujo no debe alzar la espada, sino pronunciar el nombre silencioso. Es una vibración prohibida que desgarra la garganta de quien intenta modularla sin la debida preparación alquímica.", 
-    right: "Lamentablemente, los pergaminos sagrados que la contenían se volvieron polvo, y aquel nombre fue olvidado mucho antes de que las grandes cordilleras del norte fueran esculpidas por el viento. Quien descifre este enigma, heredará el dominio sobre los elementos." 
-  },
-  { 
-    left: "Así concluye este fragmento rescatado del alba de los tiempos, un testimonio escrito con sangre y ceniza de fénix. No sigas buscando respuestas en las estrellas si no has aprendido a mirar primero la oscuridad que habita en tu propia alma.", 
-    right: "[ El libro comienza a emitir un tenue fulgor carmesí entre sus costuras desgastadas, vibra por un instante y, lentamente, vuelve a sumirse en su eterno letargo de piedra y pergamino. ]" 
+    left: `<b>A 22 días del mes de Julio.</b>
+    
+    Me hallaba en la cabaña del oráculo cuando, al tomar mis manos, vi cómo todo se oscurecía y una densa niebla inundaba el lugar: parecía un sueño. Quizás solo fue eso, un sueño, y jamás estuve allí. O una amarga vigilia. Todo quedó en tinieblas, sus ojos se tornaron blancos y comenzó a murmurar palabras comprensibles únicamente para el... aunque juraría haber escuchado esos vocablos antes.
+    
+    Salí de allí con el corazón en la garganta, temblando de espanto. Solo pronunciaba cosas sin sentido: conjuro, reencarnación, poder, lujuria.`, 
+    right: `En el camino de regreso, mi farol se apagó como si una ráfaga lo hubiera soplado. La sombra que me acechaba —cubierta con una caperuza que me impedía distinguir si poseía rostro alguno— se acercó y me susurró:
+
+    «Cuídate de las Aves».
+
+    Y acto seguido, se esfumó en la noche.
+    
+    Escribo estas líneas... Para convencerme de que solo fue una pesadilla. Pues esto no pudo haber sido real.`
   }
 ];
 
@@ -88,7 +105,7 @@ function Main() {
       <div className="z-10 flex flex-col items-center space-y-14 max-w-4xl w-full">
         
         <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white drop-shadow-[0_2px_10px_rgba(255,255,255,0.15)] leading-tight">
-          Trazales presenta
+          Trazeles presenta
         </h1>
 
         {/* --- MAGIC BOOK CONTAINER --- */}
@@ -106,7 +123,7 @@ function Main() {
             <div className="w-20 h-20 border-2 border-amber-500/30 rotate-45 flex items-center justify-center text-amber-500/40 mb-10 animate-pulse">
               <span className="-rotate-45 font-serif text-xl">A</span>
             </div>
-            <h2 className="font-serif text-xl tracking-widest text-amber-500/60 uppercase">Crónicas de un brujo</h2>
+            <h2 className="font-serif text-xl tracking-widest text-amber-500/60 uppercase">Grimorio de Hirundo</h2>
             <p className="text-s text-stone-500 mt-2 italic">Click para romper el sello</p>
           </div>
 
@@ -120,9 +137,10 @@ function Main() {
               onClick={(e) => handlePageTurn('prev', e)}
               className="bg-gradient-to-r from-amber-100 via-stone-200 to-amber-50 text-stone-900 p-6 rounded-l shadow-[inset_-10px_0_20px_rgba(0,0,0,0.15)] flex flex-col justify-between border-r border-stone-400/40 select-none relative overflow-hidden group"
             >
-              <div className="font-serif italic text-sm md:text-base leading-relaxed pt-4 opacity-90">
-                {bookPages[displayPage]?.left}
-              </div>
+              <div 
+                className="font-serif italic text-sm md:text-base leading-relaxed pt-4 opacity-90 whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: bookPages[displayPage]?.left || "" }}
+              />
               <div className="flex justify-between items-center text-xs font-serif text-stone-400">
                 <span>{displayPage * 2 + 1}</span>
                 {displayPage > 0 && (
@@ -138,9 +156,10 @@ function Main() {
               onClick={(e) => handlePageTurn('next', e)}
               className="bg-gradient-to-l from-blue-100 via-stone-200 to-blue-50 text-stone-900 p-6 rounded-r shadow-[inset_10px_0_20px_rgba(0,0,0,0.15)] flex flex-col justify-between select-none relative overflow-hidden group"
             >
-              <div className="font-serif italic text-sm md:text-base leading-relaxed pt-4 opacity-90">
-                {bookPages[displayPage]?.right}
-              </div>
+              <div 
+                className="font-serif italic text-sm md:text-base leading-relaxed pt-4 opacity-90 whitespace-pre-line"
+                dangerouslySetInnerHTML={{ __html: bookPages[displayPage]?.right || "" }}
+              />
               <div className="flex justify-between items-center text-xs font-serif text-stone-400">
                 <span className="text-blue-800/40 group-hover:text-blue-700/80 transition-colors text-[15px] tracking-wider">
                   {displayPage === bookPages.length - 1 ? 'CERRAR ✕' : 'SIGUIENTE →'}
@@ -164,12 +183,14 @@ function Main() {
               >
                 {/* Content printed on the front-side of the turning leaf */}
                 <div className="absolute inset-0 p-6 backface-hidden flex flex-col justify-between bg-gradient-to-l from-amber-50 to-stone-200">
-                  <div className="font-serif italic text-sm md:text-base leading-relaxed pt-4 opacity-70">
-                    {flipDirection === 'next' 
-                      ? bookPages[displayPage]?.right 
-                      : bookPages[displayPage]?.left
-                    }
-                  </div>
+                  <div 
+                    className="font-serif italic text-sm md:text-base leading-relaxed pt-4 opacity-70 whitespace-pre-line"
+                    dangerouslySetInnerHTML={{ 
+                      __html: (flipDirection === 'next' 
+                        ? bookPages[displayPage]?.right 
+                        : bookPages[displayPage]?.left) || '' 
+                    }}
+                  />
                   <span className="text-xs font-serif text-stone-400">
                     {flipDirection === 'next' ? displayPage * 2 + 2 : displayPage * 2 + 1}
                   </span>
@@ -177,12 +198,14 @@ function Main() {
 
                 {/* Content printed on the reverse-side of the turning leaf */}
                 <div className="absolute inset-0 p-6 [transform:rotateY(180deg)] backface-hidden flex flex-col justify-between bg-gradient-to-r from-amber-50 to-stone-200">
-                  <div className="font-serif italic text-sm md:text-base leading-relaxed pt-4 opacity-70">
-                    {flipDirection === 'next'
-                      ? bookPages[displayPage + 1]?.left
-                      : bookPages[displayPage - 1]?.right
-                    }
-                  </div>
+                  <div 
+                    className="font-serif italic text-sm md:text-base leading-relaxed pt-4 opacity-70 whitespace-pre-line"
+                    dangerouslySetInnerHTML={{ 
+                      __html: (flipDirection === 'next'
+                        ? bookPages[displayPage + 1]?.left
+                        : bookPages[displayPage - 1]?.right) || '' 
+                    }}
+                  />
                   <span className="text-xs font-serif text-stone-400">
                     {flipDirection === 'next' ? displayPage * 2 + 3 : displayPage * 2}
                   </span>
